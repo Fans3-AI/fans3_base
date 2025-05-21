@@ -1,0 +1,11 @@
+@use "../../../style/theme/util" as *;
+
+.player-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  @include theme() {
+    background-color: get(white-6);
+  }
+}

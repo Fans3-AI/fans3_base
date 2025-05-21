@@ -1,0 +1,67 @@
+@use "../../../../style/theme/util" as *;
+@import '../../../../style/common/var.scss';
+
+.button-panel-h5-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  height: 14%;
+  border-radius: 10px 10px 0 0;
+  z-index: 5;
+  transition-property: width,height,left,top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+  &.groupcall {
+    background: none;
+    &.show-panel-background {
+      @include theme() {
+        background-color: get(gray-dark-3);
+      }
+    }
+  }
+
+  &.open {
+    height: 27%;
+  }
+
+  .singlecall-panel {
+    width: 72%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 6vh;
+  }
+
+  .groupcall-panel {
+    width: 72%;
+    position: absolute;
+    top: 6%;
+
+    &.close {
+      top: 27%;
+      margin-left: 9.3vw;
+    }
+  }
+
+  .toggle-panel-btn {
+    position: absolute;
+    left: 8.2vw;
+    bottom: 6vh;
+    z-index: 1;
+
+    &.close {
+      width: 8vw !important;
+      height: 8vw !important;
+      top: 32%;
+
+      :global(.#{prefix}-icon) {
+        width: 8vw !important;
+        height: 8vw !important;
+      }
+    }
+  }
+}

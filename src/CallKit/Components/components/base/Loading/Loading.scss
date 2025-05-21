@@ -1,0 +1,22 @@
+@use "../../../style/theme/util" as *;
+@import '../../../style/common/var.scss';
+
+.#{$prefix}-loading-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+
+  &.#{$prefix}-loading-overlayer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include theme() {
+      background-color: get(black-4);
+    }
+  }
+}

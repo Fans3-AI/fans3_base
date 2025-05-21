@@ -1,0 +1,34 @@
+@use "../../../style/theme/util" as *;
+@import '../../../style/common/var.scss';
+
+.#{$prefix}-popup__arrow {
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  margin-top: -3px;
+  position: absolute;
+  @include theme() {
+    background-color: get(black-4);
+    border: 0.5px solid get(white-7);
+  }
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: rotate(45deg) translateX(-50%);
+  border-top-left-radius: 100%;
+}
+
+.#{$prefix}-popup__content {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 6px;
+  padding: 3px;
+  font-size: $font-size-m;
+  
+
+  @include theme() {
+    background-color: get(black-4);
+    border: 0.5px solid get(white-7);
+    color: get(white-1);
+  }
+}

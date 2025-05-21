@@ -1,0 +1,165 @@
+@use "../../../style/theme/util" as *;
+
+.overlay-stream-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+  .blur {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    @include theme() {
+      :global(.overlay) {
+        background-color: get(black-3);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    }
+  }
+
+  &.pc {
+    .user-info-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      
+      @include theme() {
+        color: get(white-1);
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+
+        &.float {
+          width: 40px;
+          height: 40px;
+        }
+
+        &.small {
+          width: 40px;
+          height: 40px;
+
+          &.float {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .username {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .nick {
+          max-width: 50%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-align: center;
+          font-family: PingFang SC;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          max-width: 50%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &.float {
+            font-size: 20px;
+          }
+  
+          &.small {
+            font-size: 20px;
+
+            &.float {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.mobile {
+    .user-info-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      top: 26%;
+      width: 100%;
+      z-index: 1;
+      
+      @include theme() {
+        color: get(white-1);
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+
+        &.float {
+          width: 40px;
+          height: 40px;
+        }
+
+        &.small {
+          width: 40px;
+          height: 40px;
+
+          &.float {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .username {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .nick {
+          text-align: center;
+          // text-shadow: 0px 2px 4px rgba(15, 16, 20, 0.50);
+          margin-top: 12px;
+          font-family: PingFang SC;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          max-width: 50%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+  
+          &.small {
+            font-size: 15px;
+          }
+        }
+      }
+
+      .tip {
+        margin-top: 12px;
+      }
+    }
+  }
+}

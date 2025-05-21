@@ -1,0 +1,262 @@
+.container {
+  padding: 10px;
+}
+
+.createButton {
+  background-color: #303030;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  min-width: 520px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #1677ff;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.createButton:hover {
+  background-color: #404040;
+}
+
+.plusIcon {
+  border-radius: 50%;
+  background-color: #1890ff;
+  color: white;
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+.buttonText {
+  color: white;
+  font-size: 20px;
+}
+
+/* 模态框样式 */
+.qualitySelectionModal .ant-modal-content {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.qualitySelectionModal .ant-modal-header {
+  background-color: #1e1e1e;
+  border-bottom: none;
+  padding: 16px 24px;
+  border-radius: 10px 10px 0 0;
+}
+
+.qualitySelectionModal .ant-modal-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.qualitySelectionModal .ant-modal-body {
+  padding: 20px 30px;
+}
+
+.qualitySelectionModal .closeIcon {
+  color: white;
+  font-size: 18px;
+}
+.qualityOptions {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.qualityCard {
+  flex: 1;
+  background-color: #333 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.qualityCard:hover {
+  background-color: #444 !important;
+}
+
+.qualityCard .ant-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.standardCard {
+  border: 1px solid #444 !important;
+}
+
+.highQualityCard {
+  border: 1px solid #444 !important;
+}
+
+.qualityIcon {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.standardIcon {
+  color: #f5f5f5;
+}
+
+.highIcon {
+  color: #f5f5f5;
+}
+
+.qualityTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.qualityDescription {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.upgradeLink {
+  color: #1890ff;
+  font-size: 14px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.upgradeLink:hover {
+  text-decoration: underline;
+}
+
+/* 创作者语音模态框样式 */
+.creatorVoiceModal .ant-modal-content {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.creatorVoiceModal .ant-modal-header {
+  background-color: #1e1e1e;
+  border-bottom: none;
+  padding: 16px 24px;
+  border-radius: 10px 10px 0 0;
+}
+
+.creatorVoiceModal .ant-modal-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.creatorVoiceModal .ant-modal-body {
+  padding: 20px 30px;
+}
+
+.profilePictureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.profilePictureUpload {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.profilePictureText {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.formItem {
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #ff4d4f;
+  margin-left: 2px;
+}
+
+.formInput {
+  background-color: #333 !important;
+  border: 1px solid #444 !important;
+  color: white !important;
+}
+
+.formInput::placeholder {
+  color: #888;
+}
+
+.audioNote {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.uploadButton {
+  background-color: #333 !important;
+  border: 1px solid #444 !important;
+  color: white !important;
+  width: 100%;
+  text-align: left;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.fileName {
+  color: white;
+  margin-left: 10px;
+}
+
+.policyCheckbox {
+  margin-bottom: 25px;
+}
+
+.policyText {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.policyLink {
+  color: #1890ff;
+}
+
+.confirmButton {
+  width: 100%;
+  height: 40px;
+  background-color: #1890ff !important;
+  border: none !important;
+}
+
+.confirmButton:disabled {
+  background-color: #333 !important;
+  color: #888 !important;
+}
+.message{
+  color: black;
+}

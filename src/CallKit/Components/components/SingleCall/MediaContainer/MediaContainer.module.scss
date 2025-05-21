@@ -1,0 +1,29 @@
+@use "../../../style/theme/util" as *;
+
+.single-stream-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+
+  &.pc {
+    border-radius: 12px;
+    overflow: hidden;
+
+    @include theme() {
+      background-color: get(black-2);
+    }
+
+    .single-call-audio-stream {
+      :global(.overlay) {
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &.float {
+    position: absolute;
+    visibility: hidden;
+  }
+}

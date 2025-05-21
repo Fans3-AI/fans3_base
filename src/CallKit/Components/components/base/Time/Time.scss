@@ -1,0 +1,14 @@
+@use "../../../style/theme/util" as *;
+@import "../../../style/common/var.scss";
+
+.#{$prefix}-time {
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  @include theme() {
+    color: get(white-1);  
+  }
+}

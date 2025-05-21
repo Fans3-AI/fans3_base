@@ -1,0 +1,62 @@
+@use "../../../style/theme/util" as *;
+
+.device-selector-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px;
+  font-weight: 500;
+
+  .device-item {
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 3px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: left;
+    line-height: 20px;
+    cursor: pointer;
+
+    &.control-item {
+      @include theme() {
+        border-top: 1px solid get(white-7);
+      }
+      padding-left: 6px;
+    }
+
+    &.btn {
+      @include theme() {
+        border-top: 1px solid get(white-2);
+      }
+    }
+
+    &:hover {
+      border-radius: 5px;
+      @include theme() {
+        background: get(white-7);
+      }
+    }
+
+    &.select {
+      @include theme() {
+        background-color: get(white-6);
+      }
+      border-radius: 3px;
+    }
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+
+  .scroll-content {
+    max-height: 60px;
+    margin-right: -20px;
+    overflow: hidden auto;
+    padding-right: 20px;
+  }
+}

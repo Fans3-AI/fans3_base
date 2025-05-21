@@ -1,0 +1,51 @@
+
+@use "../../../../style/theme/util" as *;
+@import "../../../../style/common/var.scss";
+
+.btn-icon {
+  width: 50% !important;
+  height: 50% !important;
+}
+
+.btn-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0px;
+  @include theme() {
+    background-color: get(white-1);
+  }
+
+  &:global(.close) {
+    @include theme() {
+      background-color: get(black-5);
+    }
+  }
+
+  &:global(.disabled) {
+    @include theme() {
+      background-color: get(black-5);
+    }
+  }
+}
+
+.arrow-btn {
+  padding: 4px;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 20px 0px 0px 0px;
+  transform: translateY(-50%);
+
+  :global(.tk-icon) {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+.#{$prefix}-btn {
+  transition-property: width,height,left,top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  width: 70px !important;
+}

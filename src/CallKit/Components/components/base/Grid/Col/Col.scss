@@ -1,0 +1,31 @@
+@import '../../../../style/common/var.scss';
+@import '../style/mixin.scss';
+
+.#{$prefix}-col-container {
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+
+  &.#{$prefix}-col-justify-content-start {
+    justify-content: flex-start;
+  }
+  &.#{$prefix}-col-justify-content-center {
+    justify-content: center;
+  }
+  &.#{$prefix}-col-justify-content-end {
+    justify-content: flex-end;
+  }
+
+  &.#{$prefix}-col-align-items-start {
+    align-items: flex-start;
+  }
+  &.#{$prefix}-col-align-items-center {
+    align-items: center;
+  }
+  &.#{$prefix}-col-align-items-end {
+    align-items: flex-end;
+  }
+}
+
+@include gen-grid();

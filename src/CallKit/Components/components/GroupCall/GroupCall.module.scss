@@ -1,0 +1,13 @@
+.group-container {
+  width: 100%;
+  height: 100%;
+
+  &.mobile {
+    animation: pulldown 0.3s linear;
+  }
+}
+
+@keyframes pulldown {
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0%)}
+}

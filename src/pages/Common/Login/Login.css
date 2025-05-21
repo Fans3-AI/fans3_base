@@ -1,0 +1,40 @@
+
+
+/* 覆盖Ant Design输入框样式 */
+.ant-input {
+  /* background-color: #1e1e1e !important; */
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+/* 覆盖输入框的占位符文本颜色 */
+.ant-input::placeholder {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 覆盖密码输入框样式 */
+.ant-input-affix-wrapper {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+/* 针对密码输入框内部的实际输入区域 */
+.ant-input-affix-wrapper .ant-input {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* 输入框内的图标颜色 */
+.ant-input-affix-wrapper .anticon {
+  color: rgba(221, 221, 221, 0.5) !important;
+}
+
+/* 密码可见性图标 */
+.ant-input-password-icon {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 表单标签文字颜色 */
+.ant-form-item-label > label {
+  color: rgb(0, 0, 0) !important;
+}

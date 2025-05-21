@@ -1,0 +1,61 @@
+@use 'sass:math';
+@import '../../../../style/common/var.scss';
+
+@mixin gen-grid-columns($index, $class) {
+  @if $index > 0 {
+    .#{$prefix}-col#{$class}-#{$index} {
+      flex: 0 0 math.percentage(calc($index / $grid-columns));
+      max-width: math.percentage(calc($index / $grid-columns));
+    }
+
+    .#{$prefix}-col#{$class}-push-#{$index} {
+      left: math.percentage(calc($index / $grid-columns));
+    }
+
+    .#{$prefix}-col#{$class}-pull-#{$index} {
+      right: math.percentage(calc($index / $grid-columns));
+    }
+
+    .#{$prefix}-col#{$class}-offset-#{$index} {
+      margin-left: math.percentage(calc($index / $grid-columns));
+    }
+
+    .#{$prefix}-col#{$class}-order-#{$index} {
+      order: $index;
+    }
+
+    @include gen-grid-columns($index - 1, $class);
+  } @else {
+    .#{$prefix}-col#{$class}-#{$index} {
+      display: none;
+    }
+
+    .#{$prefix}-col-push-#{$index} {
+      left: auto;
+    }
+
+    .#{$prefix}-col-pull-#{$index} {
+      right: auto;
+    }
+
+    .#{$prefix}-col#{$class}-push-#{$index} {
+      left: auto;
+    }
+
+    .#{$prefix}-col#{$class}-pull-#{$index} {
+      right: auto;
+    }
+
+    .#{$prefix}-col#{$class}-offset-#{$index} {
+      margin-left: 0;
+    }
+
+    .#{$prefix}-col#{$class}-order-#{$index} {
+      order: 0;
+    }
+  }
+}
+
+@mixin gen-grid($class: '') {
+  @include gen-grid-columns($grid-columns, $class);
+}

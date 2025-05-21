@@ -1,0 +1,11 @@
+@import '../../../../style/common/var.scss';
+
+.#{$prefix}-gridplus-item-container {
+  transition-property: width,height,left,top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+  &.center {
+    transform: translateX(50%);
+  }
+}

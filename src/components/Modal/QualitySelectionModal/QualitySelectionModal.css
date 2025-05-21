@@ -1,0 +1,115 @@
+.qualitySelectionModal .ant-modal-content {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 1px solid #333;
+  color:white;
+}
+
+.qualitySelectionModal .ant-modal-header {
+  background-color: #1e1e1e;
+  border-bottom: none;
+  padding: 16px 24px;
+  border-radius: 10px 10px 0 0;
+}
+
+.qualitySelectionModal .ant-modal-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.qualitySelectionModal .ant-modal-body {
+  padding: 20px 20px;
+}
+
+.qualitySelectionModal .closeIcon {
+  color: white;
+  font-size: 18px;
+}
+.qualitySelectionModal .ant-modal-close-x {
+  color: white;
+}
+.qualityOptions {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.qualityCard {
+  flex: 1;
+  background-color: #333 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.qualityCard:hover {
+  background-color: #444 !important;
+}
+
+.qualityCard .ant-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.standardCard {
+  padding-top: 20px;
+  border: 1px solid #444 !important;
+}
+
+.highQualityCard {
+  padding-top: 20px;
+  border: 1px solid #444 !important;
+}
+
+.qualityIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+.standardIcon {
+  color: #f5f5f5;
+}
+
+.highIcon {
+  color: #f5f5f5;
+}
+
+.qualityTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+
+.qualityDescription {
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.upgradeLink {
+  color: #1890ff;
+  font-size: 14px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.upgradeLink:hover {
+  text-decoration: underline;
+}
+
+.qualityIconImg {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}

@@ -1,0 +1,15 @@
+@import '../../../style/common/var.scss';
+
+.#{$prefix}-text {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  line-height: normal;
+  white-space: nowrap;
+
+  &.#{$prefix}-text--line-clamp {
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}

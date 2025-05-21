@@ -1,0 +1,19 @@
+.message-c2c-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  word-break: break-all;
+
+  .call-content {
+    padding-left: 8px;
+  }
+
+  &.c2c {
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

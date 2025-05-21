@@ -1,0 +1,22 @@
+@mixin button-size($height, $font-size, $icon-size, $padding-horizontal) {
+  height: $height;
+  width: $icon-size;
+  font-size: $font-size;
+  padding-left: $padding-horizontal;
+  padding-right: $padding-horizontal;
+
+  .#{$prefix}-icon {
+    width: $icon-size;
+    height: $icon-size;
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .#{$prefix}-loading {
+    // font-size: $btn-loading-size;
+    font-size: $icon-size;
+  }
+};

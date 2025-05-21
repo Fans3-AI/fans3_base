@@ -1,0 +1,27 @@
+.privacyPolicyModal .ant-modal-content {
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+
+.privacyPolicyModal .ant-modal-header {
+  background-color: #1e1e1e;
+  border-bottom: none;
+}
+
+.privacyPolicyModal .ant-modal-title {
+  color: white;
+}
+
+.privacyPolicyModal .ant-modal-close-x {
+  color: white;
+}
+
+.privacyPolicyModal .lastRevised {
+  margin-bottom: 20px;
+}
+
+.privacyPolicyModal .ant-typography {
+  color: white;
+}

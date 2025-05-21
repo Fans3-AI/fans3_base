@@ -1,0 +1,61 @@
+.homePage {
+  padding: 24px;
+}
+
+.title {
+  color: white;
+}
+
+.subTitle {
+  color: white;
+}
+
+.card {
+  text-align: center;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.cardBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.cardIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.iconContainer {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+
+.cardText {
+  font-size: 16px;
+  display: block;
+  word-break: break-word;
+  line-height: 1.5;
+  color: white;
+}
+
+.creatorCard {
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+}
+
+.creatorName {
+  color: white;
+}

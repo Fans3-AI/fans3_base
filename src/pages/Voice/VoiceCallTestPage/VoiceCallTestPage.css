@@ -1,0 +1,22 @@
+.call-uikit-mobile {
+  width: 100vw !important;
+  height: 100vh !important;
+  /* transform: translate(-50%, -50%); */
+  /* position: fixed; */
+  z-index: 999;
+}
+
+/* sample-chat-h5 样式 */
+.sample-chat-h5 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* sample-chat-h5-container 样式 */
+.sample-chat-h5-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden; /* 默认隐藏溢出 */
+}

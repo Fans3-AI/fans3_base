@@ -1,0 +1,15 @@
+@use "../../../../../style/theme/util" as *;
+@import "../../../../../style/common/var.scss";
+
+.background-blur-icon-container {
+  
+  @include theme() {
+    background-color: get(white-1);  
+  }
+  &.close {
+    
+    @include theme() {
+      background-color: get(black-5);
+    }
+  }
+}

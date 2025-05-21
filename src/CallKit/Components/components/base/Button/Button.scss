@@ -1,0 +1,122 @@
+@use "../../../style/theme/util" as *;
+@import '../../../style/common/var.scss';
+@import '../../../style/common/mixin.scss';
+
+// size
+$btn-height-s: 36px;
+$btn-height-m: 40px;
+$btn-height-l: 60px;
+$btn-height-auto: auto;
+
+// Font size
+$btn-font-large: $font-size-l;
+$btn-font-middle: $font-size-base;
+$btn-font-small: $font-size-base;
+
+// icon size
+$btn-icon-size-s: $font-size-base;
+$btn-icon-size-m: $font-size-l;
+$btn-icon-size-l: $font-size-xl;
+
+.#{$prefix}-btn-container {
+  display: flex;
+  @include theme() {
+    color: get(white-2);
+  }
+  transition-property: width,height,left,top;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+  &.pc {
+    cursor: pointer;
+  }
+
+  &.#{$prefix}-flex-vertical {
+    flex-direction: column;
+    align-items: center;
+
+    &.#{$prefix}-size-s {
+      &.pc {
+        @include button-size($btn-height-auto, $btn-font-small, 20px, 0);
+      }
+      &.mobile {
+        @include button-size($btn-height-auto, $btn-font-small, 40px, 0);
+      }
+    }
+
+    &.#{$prefix}-size-m {
+      &.pc {
+        @include button-size($btn-height-auto, $btn-font-small, 60px, 0);
+        .#{$prefix}-icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      &.mobile {
+        @include button-size($btn-height-auto, $btn-font-small, 60px, 0);
+        .#{$prefix}-icon {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+
+    &.#{$prefix}-size-l {
+      &.pc {
+        @include button-size($btn-height-auto, $btn-font-small, 60px, 0);
+      }
+      &.mobile {
+        @include button-size($btn-height-auto, $btn-font-small, 80px, 0);
+      }
+    }
+  }
+
+  &.#{$prefix}-flex-horizontal {
+    flex-direction: row;
+    align-items: center;
+
+    &.#{$prefix}-size-s {
+      @include button-size($btn-height-s, $btn-font-small, $btn-icon-size-s, 0);
+    }
+
+    &.#{$prefix}-size-m {
+      @include button-size($btn-height-m, $btn-font-middle, $btn-icon-size-m, 0);
+    }
+
+    &.#{$prefix}-size-l {
+      @include button-size($btn-height-l, $btn-font-middle, $btn-icon-size-l, 0);
+    }
+  }
+
+  &.#{$prefix}-ghost {
+    background: none;
+  }
+
+  .#{$prefix}-content {
+    margin-top: 8px;
+    text-align: center;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: 400;
+    max-height: 30px;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  .#{$prefix}-icon {
+    transition-property: width,height,left,top;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    &.#{$prefix}-size-s {
+      @include button-size($btn-height-s, $btn-font-small, $btn-icon-size-s, 0);
+    }
+
+    &.#{$prefix}-size-m {
+      @include button-size($btn-height-m, $btn-font-middle, $btn-icon-size-m, 0);
+    }
+
+    &.#{$prefix}-size-l {
+      @include button-size($btn-height-l, $btn-font-middle, $btn-icon-size-l, 0);
+    }
+  }
+}

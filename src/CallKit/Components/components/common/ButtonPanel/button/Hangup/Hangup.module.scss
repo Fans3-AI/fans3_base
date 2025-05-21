@@ -1,0 +1,7 @@
+@use "../../../../../style/theme/util" as *;
+
+.hangup-icon-container {
+  @include theme() {
+    background-color: get(button-color-hangup);
+  }
+}

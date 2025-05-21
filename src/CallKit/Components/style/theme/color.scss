@@ -1,0 +1,23 @@
+$prefix: "uikit";
+
+$basic-colors: (
+  white-1: #FFFFFF,
+  white-2:rgba(255, 255, 255, 0.9),
+  white-4: rgba(255, 255, 255, 0.55),
+  white-6: rgba(255, 255, 255, 0.3),
+  white-7: rgba(255, 255, 255, 0.14),
+  black-1: rgba(0, 0, 0, 1),
+  black-2: rgba(0, 0, 0, 0.9),
+  black-3: rgba(0, 0, 0, 0.72),
+  black-4: rgba(0, 0, 0, 0.55),
+  black-5: rgba(0, 0, 0, 0.4),
+  black-8: rgba(0, 0, 0, 0.06),
+  gray-dark-3: rgba(43, 44, 48, 1),
+
+);
+
+:root {
+  @each $name, $color in $basic-colors {
+    --#{$prefix}-basic-color-#{$name}: #{$color};
+  }
+}

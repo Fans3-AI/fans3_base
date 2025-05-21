@@ -1,0 +1,28 @@
+.single-container {
+  width: 100%;
+  height: 100%;
+  .singlecall-tip {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  &.mobile {
+    animation: pulldown 0.5s linear;
+
+    .singlecall-tip {
+      position: absolute;
+      max-width: 80%;
+      top: 53.6vh;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+    }
+  }
+}
+
+@keyframes pulldown {
+  from {transform: translateY(-100%)}
+  to {transform: translateY(0%)}
+}

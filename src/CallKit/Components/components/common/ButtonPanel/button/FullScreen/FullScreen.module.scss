@@ -1,0 +1,13 @@
+@import "../../../../../style/common/var.scss";
+
+.full-screen-container {
+   width: 20px !important;
+   height: 20px !important;
+   margin-right: 10px;
+
+   :global(.#{$prefix}-icon) {
+    line-height: 20px;
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

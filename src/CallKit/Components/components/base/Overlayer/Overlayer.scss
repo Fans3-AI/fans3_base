@@ -1,0 +1,17 @@
+@use "../../../style/theme/util" as *;
+@import '../../../style/common/var.scss';
+
+.#{$prefix}-overlayer-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include theme() {
+      background-color: get(black-4);
+    }
+  }
+}

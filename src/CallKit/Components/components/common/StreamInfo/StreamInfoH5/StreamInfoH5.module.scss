@@ -1,0 +1,21 @@
+@use "../../../../style/theme/util" as *;
+
+.stream-info-container-h5 {
+  width: calc(100% - 16px);
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-wrap: nowrap;
+  margin: 8px 8px;
+  background: none;
+
+  @include theme() {
+    color: get(white-1);
+  }
+
+  &.single {
+    height: 20px;
+  }
+}

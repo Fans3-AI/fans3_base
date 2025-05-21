@@ -1,0 +1,179 @@
+/* 进一步提高权重 */
+#blackSelect {
+    color: black !important;
+}
+.outputDiv {
+  color: white;
+  background-color: #303030;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.ant-btn-text {
+  padding-left: 12px !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  height: 32px !important;
+}
+
+.ant-btn-text:hover {
+  background-color: #2a2a2a !important;
+}
+
+.ant-input {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.ant-input::placeholder {
+  color: #6d6d6d !important;
+}
+
+#blackSelect .ant-select-selector {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #3a3a3a !important;
+}
+.custom-class {
+  color: black; /* 或者你想要的其他颜色 */
+}
+
+.textToSpeechPage {
+  min-height: 100vh;
+  padding-right: 24px;
+  position: relative;
+  color: white;
+  min-width: 840px;
+}
+
+.textToSpeechTitle {
+  color: white;
+}
+
+.textToSpeechDivider {
+  border-color: #3a3a3a;
+}
+
+.textToSpeechLabel {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.textToSpeechSelect {
+  width: 200px;
+  font-size: 16px;
+  color: black;
+}
+
+.textAreaContainer {
+  position: relative;
+}
+
+.textToSpeechTextArea {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #3a3a3a;
+}
+
+.textToSpeechTextArea .ant-input-count {
+  background-color: transparent;
+  color: #8c8c8c;
+  font-size: 12px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+
+.wordCount {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #8c8c8c;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.textToSpeechButton {
+  color: white;
+  height: 32px;
+  background-color: #1e1e1e;
+  border: 1px solid white;
+  margin-left: 10px;
+}
+
+.textToSpeechSlider {
+  flex: 1;
+}
+
+.audioPlayerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+  right: 24px;
+  z-index: 1000;
+  min-width:840px ;
+}
+
+/* Ant Design 样式覆盖 */
+#blackSelect .ant-select-selector {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.ant-input {
+  background-color: #1e1e1e !important;
+  color: white !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.ant-input::placeholder {
+  color: #6d6d6d !important;
+}
+
+.ant-btn-text {
+  padding-left: 12px !important;
+  text-align: left !important;
+  justify-content: flex-start !important;
+  height: 32px !important;
+}
+
+.ant-btn-text:hover {
+  background-color: #2a2a2a !important;
+}
+
+.generateButton {
+  min-width: 120px;
+  height: 40px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.generateButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.generateButton:active {
+  transform: translateY(0);
+}
+
+.generateButton .anticon-loading {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.iconImg {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* 将图片转换为白色 */
+}
+.iconImgTips {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* 将图片转换为白色 */
+}
+.audioShow{
+  min-width: 400px;
+}

@@ -1,0 +1,61 @@
+@use '../../../style/theme/util' as *;
+@import '../../../style/common/var.scss';
+
+.#{$prefix}-message-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 10px;
+  border-radius: $radius-default;
+  @include theme() {
+    box-shadow: 0px 1px 5px get(black-8), 0px 8px 12px get(black-8), 0px 12px 26px get(black-8);
+  }
+
+  padding: 10px;
+
+  @include theme() {
+    background-color: get(toast-color-default);
+    color: get(text-color-primary);
+  }
+
+  svg {
+    @include theme() {
+      margin-right: 4px;
+      fill: get(text-color-primary);
+    }
+  }
+
+  &.#{$prefix}-message-plaintext {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    @include theme() {
+      color: get(white-1);
+    }
+  }
+
+  .#{$prefix}-message-icon {
+    width: 1em !important;
+    height: 1em !important;
+
+    &.tip-icon {
+      margin-right: 8px;
+    }
+
+    &.close-icon {
+      margin-left: 24px;
+    }
+  }
+}
+
+.message-list-container {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,4 @@
+.table-container {
+    height: 68vh; /* 设置容器高度为75vh */
+    overflow-y: auto; /* 允许垂直滚动 */
+  }
