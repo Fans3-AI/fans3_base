@@ -1,15 +1,14 @@
 # Voice NFT Minting App
 
-This is an innovative app built with **React + Solana + Tencent Cloud TRTC + Pinata**, allowing users to conduct **real-time voice-modulated calls** and **mint their own voice recordings as unique NFTs** stored on the Solana blockchain.
+This is an innovative application built with **React + Base (Ethereum L2) + Tencent Cloud TRTC + Pinata**. It allows users to make **real-time voice-modulated calls** and mint their own voice recordings as unique NFTs stored on the Base (Ethereum Layer 2) blockchain.
 
 ---
 
 ## 🚀 Tech Stack
 
 * 🔧 [React](https://reactjs.org/)
-* 💸 [Solana Web3](https://docs.solana.com/)
-* 🔐 [@solana/wallet-adapter](https://github.com/solana-labs/wallet-adapter)
-* 🧰 [Metaplex UMI](https://github.com/metaplex-foundation/umi)
+* 💸 [ethers.js (Base/Ethereum)](https://docs.ethers.org/)
+* 🔐 [MetaMask Wallet Integration](https://metamask.io/)
 * 🗂️ [Pinata (IPFS)](https://www.pinata.cloud/)
 * 📞 [Tencent TRTC SDK (CallKit)](https://cloud.tencent.com/product/trtc)
 * 🧩 [Ant Design](https://ant.design/)
@@ -18,24 +17,24 @@ This is an innovative app built with **React + Solana + Tencent Cloud TRTC + Pin
 
 ## ✨ Core Features
 
-### 🔊 Real-time Voice Modulation + Calling (Tencent TRTC)
+### 🔊 Real-time Voice Modulation & Calling (Tencent TRTC)
 
-* WebRTC-based audio call using Tencent TRTC
-* Users can **speak in real-time with live voice-changing effects**
-* Supports multiple voice filters (e.g. male, female, loli, deep male voice, etc.)
+* WebRTC-based audio calls powered by Tencent TRTC
+* Users can **modulate their voice in real time** during calls
+* Supports multiple voice effects (e.g. male, female, loli, deep male, etc.)
 
-### 🎤 Audio Recording + NFT Minting
+### 🎤 Voice Recording & NFT Minting
 
-* Voice-modulated conversations are recorded (user's own voice, not pre-recorded clips)
-* Recordings are used to mint NFTs that capture unique voice moments
-* Users can upload a custom cover image for the audio
+* Recordings of voice-modulated calls (user's own voice)
+* Recordings can be minted as NFTs to capture unique voice moments
+* Users can upload a custom cover image
 * Audio and image files are uploaded to IPFS via Pinata
-* A `metadata.json` file is automatically generated (including name, description, image, animation\_url)
-* NFTs are minted on Solana Devnet using Metaplex UMI and sent to the user's Phantom wallet
+* `metadata.json` is automatically generated (including name, description, image, animation_url)
+* NFTs are minted on the Base (Ethereum L2) blockchain and sent to the user's MetaMask wallet
 
-### 💼 Wallet Integration + NFT Management
+### 💼 Wallet Integration & NFT Management
 
-* Users can connect their Phantom wallet
+* Users can connect their MetaMask wallet
 * View and manage all Voice NFTs minted via the app
 
 ---
@@ -78,7 +77,7 @@ npm run dev
 
 ## 🔄 Updating the API (OpenAPI Generator)
 
-If the backend OpenAPI schema changes, regenerate the API client by following these steps:
+If the backend OpenAPI schema changes, you can regenerate the API client as follows:
 
 ### Step 1: Navigate to the API folder
 
@@ -100,7 +99,7 @@ openapi-generator-cli generate \
 
 ## ⚙️ Environment Variables
 
-Set the following environment variables in a `.env` file at the root of the project:
+Create a `.env` file in the project root with the following content:
 
 ```env
 VITE_JWT="<your-Pinata-token>"
@@ -109,5 +108,5 @@ VITE_TUI_USER_SIG=<your-trtc-user-signature>
 VITE_TUI_CUSTOM_SIG=<your-trtc-custom-signature>
 ```
 
-## 🎥 Demo Video
-https://www.loom.com/share/a6da0b41208c47d29d93463a046f8d7f
+---
+
